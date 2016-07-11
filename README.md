@@ -5,7 +5,6 @@ The goal is to prepare tidy data that can be used for later analysis. The origin
 * README.md - A Readme file describing the repo
 * CodeBook.md - Describes all the variables and summaries calculated, along with units, and any other relevant information.
 * run_analysis.R - R script taking raw data and output a tidy data
-* newtidyData.txt - An independent tidy data set with the average of each variable for each activity and each subject.
 
 # The run_analysis.R performs:
 1. Merges the training and the test sets to create one data set.
