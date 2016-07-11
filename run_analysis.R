@@ -25,7 +25,7 @@ selected <- grepl("mean\\(\\)|std\\(\\)", features$V2)
 mean_std_data <- allData[, c(1,2, features[selected, ]$V1+2)]
 
 # Step 3: Uses descriptive activity names to name the activities in the data set
-label <- fread("UCI HAR Dataset/activity_labels.txt", stringsAsFactors = FALSE)$V2
+label <- read.table("UCI HAR Dataset/activity_labels.txt", stringsAsFactors = FALSE)$V2
 mean_std_data$Activity <- label[mean_std_data$Activity]
 
 # Step 4: Appropriately labels the data set with descriptive variable names.
