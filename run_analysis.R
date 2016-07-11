@@ -7,6 +7,10 @@
 ##  5. From the data set in step 4, creates a second, independent tidy data set 
 ##     with the average of each variable for each activity and each subject.
 
+# This script should be in the same folder as the data set folder "UCI HAR Dataset". 
+# Two subfolders are under this main folder: "train" and "test"
+# txt files should be found in each subfolders. 
+# See step 1 for the details of the directory structure. 
 
 # Step 1: Merges the training and the test sets to create one data set.
 data <- rbind(read.table("UCI HAR Dataset/train/X_train.txt"), 
